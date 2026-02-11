@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List - Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>To-Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList">
+        {% for task in tasks %}
+        <li>
+            <span>{{ task }}</span>
+            <div>
+                <button class="edit" onclick="editTask({{ loop.index0 }}, '{{ task }}')">Edit</button>
+                <button class="delete" onclick="deleteTask({{ loop.index0 }})">Delete</button>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
