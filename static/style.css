@@ -1,70 +1,70 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #eef2f3, #d9e4f5);
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
-    width: 350px;
-    margin: 100px auto;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 320px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 15px;
+    color: #333;
 }
 
 input {
-    width: 85%;
-    padding: 10px;
-    border-radius: 6px;
+    width: 80%;
+    padding: 8px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
     margin-top: 10px;
-    padding: 9px 16px;
+    padding: 8px 12px;
     border: none;
-    border-radius: 6px;
-    background: #4a90e2;
+    border-radius: 4px;
+    background-color: #007bff;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background: #357abd;
+    background-color: #0056b3;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 li {
-    background: #f7f9fc;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 6px;
+    background-color: #f1f1f1;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 li button {
-    padding: 5px 8px;
+    padding: 4px 8px;
     font-size: 12px;
     margin-left: 5px;
 }
 
 .edit {
-    background: #2ecc71;
+    background-color: #28a745;
 }
 
 .delete {
-    background: #ff6b6b;
+    background-color: #dc3545;
 }
